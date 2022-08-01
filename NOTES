@@ -1,0 +1,16 @@
+#rails Structure :MVC (Model, Views and Controller)
+yaitu pemisahan lapisan presentasi (apa yang dilihat oleh user aplikasi dengan back end/ developer
+(MVC is separation of presentation layer (what the user of the app sees in the browser/mobile devise) and the bussiness logic or back end(invisible layer))
+
+model = user - post - article - stock
+view = home - new - friends - my_portofolio.html.erb (user pov)
+controller = user_controller - posts_controller - article_controller - stocks_controller (developer/ back end pov)
+
+#General flow of Rails application:
+-> Request made at browser
+-> Request received at router of rails application
+-> Request routed to appropriate action in a controller
+-> Controller#action either renders a view template or communicates with model
+-> Model communicates with database
+-> Model sends back information to controller
+-> Controller renders view
