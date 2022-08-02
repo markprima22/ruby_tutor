@@ -6,12 +6,11 @@ class Orang
 
   #initialize methode
   def initialize(x)
-@umur = x
+    @umur = x
   end
-def ambilUmur
-  puts "umur saya ... #{@umur}"
-end
-
+  def ambilUmur
+    puts "umur saya ... #{@umur}"
+  end
   def setUmur(y)
     @umur = y
   end
@@ -21,12 +20,24 @@ end
 
 class Bapak < Orang
 
-  def sifat
-    puts "punya kumis dan jenggot"
+  def setUmur(y)
+    super
+    puts "umur saya #{@umur}"
+  end
+
+  def ambilUmur
+    super
+    if @umur < 20
+      puts "masih muda"
+    end
   end
 
 end
-
-sujatmiko = Bapak.new(25)
-sujatmiko.ambilUmur
-pry
+# SOLID
+a = Bapak.new(0)
+a.setUmur(10)
+a.ambilUmur
+puts "---------"
+b = Orang.new(0)
+b.setUmur(10)
+b.ambilUmur
