@@ -18,19 +18,6 @@ end
 
 end
 
-#bikin object dari Class
-orang = Orang.new(19)
-orang.ambilUmur()
-
-orang = Orang.new(29)
-orang.ambilUmur()
-
-#setumur
-orang = Orang.new(20)
-orang.setUmur(30)
-orang.ambilUmur
-
-#Inheritance
 
 class Bapak < Orang
 
@@ -40,9 +27,6 @@ class Bapak < Orang
 
 end
 
-orang = Bapak.new(25)
-orang.setUmur(35)
-orang.ambilUmur
-
-bapak = Bapak.new(45)
-bapak.sifat
+sujatmiko = Bapak.new(25)
+sujatmiko.ambilUmur
+pry
