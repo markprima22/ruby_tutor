@@ -1,3 +1,4 @@
+#this is just for an exercise
 data_user = {
   "mark" => 1000,
   "prima" => 2000,
