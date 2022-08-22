@@ -11,7 +11,7 @@ loop do
   puts "silahkan ketik username anda"
 nama = gets.chomp.downcase
   if saldo.include?(nama)
-  puts "saldo a.n #{nama} berjumlah: #{nominal(saldo, nama)}"
+    print "saldo a.n #{nama} berjumlah: #{nominal(saldo, nama)}"
   else
   puts "nama anda salah"
     break
