@@ -8,5 +8,4 @@ def hello(halo, calling)
   salam = halo + calling
   puts "hey there, #{salam}"
 end
-
 hello("assalamu'alaikum wr.wb", " ya ikhwan")
