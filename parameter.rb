@@ -11,3 +11,4 @@ def hello(halo, calling)
 end
 hello("assalamu'alaikum wr.wb", " ya ikhwan")
 # => hey there, assalamu'alaikum wr.wb ya ikhwan
+hello("assalamu'alaikum wr.wb", " ya ikhwan")

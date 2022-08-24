@@ -1,20 +1,17 @@
-data_user = {
-  "mark" => 1000,
-  "prima" => 2000,
-  "nabil" => 3000,
-  "akbar" => 4000
+data = {
+  001 => 1000,
+  002 => 2000
 }
-def nominal(name, balance)
-  name[balance]
+def nominal(id, balance)
+  id[balance]
 end
 loop do
-  puts "please enter your username"
-  name = gets.chomp.downcase
-  if data_user.include?(name)
-    puts "#{name} balance is #{nominal(data_user, name)}"
+  puts "enter your id number"
+  id_number = gets.chomp.to_i
+  if data.include?id_number
+    puts "the balance of id: #{id_number} is [#{nominal(data, id_number)}]"
   else
-    puts "sorry, your input is wrong,
-please enter your name"
+    puts "sorry, your id number is not recognized"
     break
   end
 end
