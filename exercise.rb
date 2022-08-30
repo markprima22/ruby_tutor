@@ -13,8 +13,7 @@ loop do
   if data_user.include?(name)
     puts "#{name} balance is #{nominal(data_user, name)}"
   else
-    puts "sorry, your input is wrong,
-please enter your name"
+    puts "sorry, your input is wrong, please restart the page"
     break
   end
 end
